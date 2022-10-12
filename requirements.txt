@@ -1,5 +1,5 @@
 Flask
-numpy
+numpy==1.18.4
 pandas
 scikit-learn==0.20.2
 joblib
