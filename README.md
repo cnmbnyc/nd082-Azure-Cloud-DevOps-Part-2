@@ -3,14 +3,6 @@
 
 <TODO: complete this with an overview of your project>
 
-## Screenshots
-
-1. ![Azure Cloud Shell ssh Clone the repo](cloud_shell_ssh_clone.png)
-
-1. ![Passing all the tests with `make all`](local_make_all.png)
-
-1. ![Pass Github Actions in remote](github_actions_pass.png)
-
 ## Project Plan
 
 <TODO: Project Plan
@@ -26,15 +18,27 @@
 
 * Project running on Azure App Service
 
+![Running on Azure App Service](app-running-in-app-service.png)
+
 * Project cloned into Azure Cloud Shell
+
+![Azure Cloud Shell ssh Clone the repo](cloud_shell_ssh_clone.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
+![Passing all the tests with `make all`](local_make_all.png)
+
 * Output of a test run
+
+![Pass Github Actions in remote](github_actions_pass.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
+![Deploy service in Azure Pipelines](deploy-project-in-Azure-Pipelines.png)
+
 * Running Azure App Service from Azure Pipelines automatic deployment
+
+![Run App Service from Azure Pipelines deployment](run-app-service-from-pipelines.png)
 
 * Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
 The output should look similar to this:
