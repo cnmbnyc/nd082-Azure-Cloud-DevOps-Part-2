@@ -49,8 +49,10 @@ Port: 443
 {"prediction":[20.35373177134412]}
 ```
 
-* Output of streamed log files from deployed application
+![Successful prediction using the API](prediction_success.png)
 
+* Output of streamed log files from deployed application
+![Streamed logs from deployed app](streamed_log.png)
 >
 
 ## Enhancements
