@@ -22,8 +22,12 @@ def scale(payload):
 def home():
     html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
+  
+@app.route("/healthcheck")
+def health():
+    html = "<h3>Health Check Result</h3>"
+    return html.format(format)
 
-# TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
     """Performs an sklearn prediction
@@ -66,7 +70,9 @@ def predict():
     LOG.info("inference payload DataFrame: %s inference_payload")
     scaled_payload = scale(inference_payload)
     prediction = list(clf.predict(scaled_payload))
-    return jsonify({'prediction': prediction})
+    prediction_json = jsonify({'prediction': prediction})
+    LOG.info(f"{prediction_json}")
+    return prediction_json
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
