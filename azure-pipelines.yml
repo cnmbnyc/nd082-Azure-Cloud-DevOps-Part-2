@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: '897e633e-9e8e-449d-9b5a-52e3f96f4708'
 
   # Web app name
-  webAppName: 'web-app-for-c2'
+  webAppName: 'web-app-not-free'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'web-app-for-c2'
+  environmentName: 'web-app-not-free'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
