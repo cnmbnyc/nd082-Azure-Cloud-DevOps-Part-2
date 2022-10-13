@@ -1,20 +1,25 @@
-
 # Overview
 
-<TODO: complete this with an overview of your project>
+![Master Branch](https://github.com/cnmbnyc/nd082-Azure-Cloud-DevOps-Part-2/actions/workflows/pythonapp.yml/badge.svg)
+
+1. A simple Flask server, with a working endpoint `/predict`, and `/healthcheck`.
+1. The `/predict` endpoint can predict the average Boston house price.
+1. Hosted using Azure Pipeline and Azure App Service.
+1. Not that stable for free-tier users. So please upgrade to `Standard` ASAP.
 
 ## Project Plan
 
-<TODO: Project Plan
-
 * A link to a Trello board for the project
+[Trello board link](https://trello.com/invite/b/wtPiIEEs/e6edf332030f4463b3172efb288fa174/web-app-not-free-project)
+
 * A link to a spreadsheet that includes the original and final project plan>
+[Spreadsheet link](https://docs.google.com/spreadsheets/d/1wR_a4RVaV_Ui7uC1DCI6BPzD6F1egTSK/edit?usp=sharing&ouid=102356077519799393882&rtpof=true&sd=true)
 
 ## Instructions
 
-<TODO: * Architectural Diagram (Shows how key parts of the system work)>
+[Link to the Diagram](https://lucid.app/lucidchart/70aef74f-e955-4a20-b072-ad062e4acbc3/edit?viewport_loc=-11%2C-144%2C3072%2C1455%2C0_0&invitationId=inv_d195e482-2f49-4b93-8dbc-dafe69047d01#https://lucid.app/lucidchart/70aef74f-e955-4a20-b072-ad062e4acbc3/edit?invitationId=inv_d195e482-2f49-4b93-8dbc-dafe69047d01#)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+![Image of the Architecture](cloud-architecture.png)
 
 * Project running on Azure App Service
 
@@ -53,11 +58,14 @@ Port: 443
 
 * Output of streamed log files from deployed application
 ![Streamed logs from deployed app](streamed_log.png)
->
+
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+1. Use Kubernetes to better orchestrate the service.
+1. Add validation on the APIs request.
+1. Integrate with 3rd party Data Source service.
+1. Add auto-scale and rate-limiter to the service.
 
 ## Demo
 
