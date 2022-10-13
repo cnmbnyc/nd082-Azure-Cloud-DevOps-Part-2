@@ -9,7 +9,6 @@
 
 ## Project Plan
 
-1. HELLO WORLD
 
 * A link to a Trello board for the project
 [Trello board link](https://trello.com/invite/b/wtPiIEEs/e6edf332030f4463b3172efb288fa174/web-app-not-free-project)
@@ -91,4 +90,4 @@ Port: 443
 
 ## Demo
 
-<TODO: Add link Screencast on YouTube>
+[Demo Youtube Link](https://youtu.be/o1JGPqI-4lY)
