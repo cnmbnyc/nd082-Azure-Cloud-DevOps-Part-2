@@ -23,25 +23,39 @@
 
 * Project running on Azure App Service
 
+1. The Flask app is run in Azure using Azure App Service, which is a `PaSS`.
+
 ![Running on Azure App Service](app-running-in-app-service.png)
 
 * Project cloned into Azure Cloud Shell
+
+1. First step, clone the repo using Azure Shell, which is easy after setting up the SSH correctly.
 
 ![Azure Cloud Shell ssh Clone the repo](cloud_shell_ssh_clone.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 
+1. Then, SSH'd into the repo and run `make all` including Dependency Installation, Lint and Test.
+
 ![Passing all the tests with `make all`](local_make_all.png)
 
 * Output of a test run
+
+1. `make test` passed all the test cases.
 
 ![Pass Github Actions in remote](github_actions_pass.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
+1. After a few clicks, deployment through Azure Pipelines could be done.
+1. The difficult part is, you need to fill in a Google Form to request a free parallel, which is totally a disaster.
+1. And if you survived the disaster, everything will be good to go.
+
 ![Deploy service in Azure Pipelines](deploy-project-in-Azure-Pipelines.png)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
+
+1. After Azure Pipelines (kinda like Github Actions) passed all the steps, inside the Azure App Service, the deployment success will be shown.
 
 ![Run App Service from Azure Pipelines deployment](run-app-service-from-pipelines.png)
 
@@ -54,9 +68,15 @@ Port: 443
 {"prediction":[20.35373177134412]}
 ```
 
+1. This one is HARD, because the package versions provided inside the Starter Kit is not working, need to manually fine-tune it to make the code working.
+1. Some newer versions of Scikit-learn totally not working for this app.
+
 ![Successful prediction using the API](prediction_success.png)
 
 * Output of streamed log files from deployed application
+
+1. Like the local Docker running, you can call the API endpint and check the streamed logs at the meantime, which is easier for debug.
+
 ![Streamed logs from deployed app](streamed_log.png)
 
 
