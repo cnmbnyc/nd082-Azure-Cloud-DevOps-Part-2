@@ -80,6 +80,9 @@ Port: 443
 
 ![Streamed logs from deployed app](streamed_log.png)
 
+* Load testing using Locust
+
+![Load testing](load_testing.png)
 
 ## Enhancements
 
